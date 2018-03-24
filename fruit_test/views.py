@@ -3,6 +3,6 @@ from fruit_test.models import Fruits
 from fruit_test.serializers import FruitSerializer
 
 
-class FruitViewSet(viewsets.ModelViewSet):
+class FruitViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Fruits.objects.all()
     serializer_class = FruitSerializer
