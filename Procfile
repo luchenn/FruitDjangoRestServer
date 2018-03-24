@@ -1,1 +1,1 @@
-web: bin/start-nginx bundle exec gunicorn fruit.wsgi --log-file -
+web: gunicorn fruit.wsgi --log-file -
